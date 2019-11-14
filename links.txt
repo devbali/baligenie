@@ -1,3 +1,6 @@
+# This is a sample of how you can organize your links
+# Please customize this file according to your preferences
+
 # Huffington Post Sources
 Huffington Post Front Page	https://www.huffpost.com/section/front-page/feed
 Huffington Post Politics	https://www.huffpost.com/section/politics/feed
