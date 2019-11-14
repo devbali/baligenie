@@ -1,0 +1,6 @@
+# Huffington Post Sources
+Huffington Post Front Page	https://www.huffpost.com/section/front-page/feed
+Huffington Post Politics	https://www.huffpost.com/section/politics/feed
+
+# The Guardian Sources:
+# Enter sources here
