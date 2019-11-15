@@ -21,3 +21,4 @@ Huffington Post Politics	https://www.huffpost.com/section/politics/feed
 - There will be a `cache.txt` file in the res folder that will be automatically generated
 - This file enters every link the program accessed, so if the same link is accessed multiple times it will not create duplicate files
 - Links in the cache expire every week, i.e. files may repeat if the RSS feed does not change its articles in a week (these should be updated daily or even more frequently)
+- To keep the article base updated you should run the script regularly, ideally automatically on a set frequency
