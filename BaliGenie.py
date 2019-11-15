@@ -105,6 +105,7 @@ def do_item (item,feed_title):
 		print("Saving Article:",title.text)
 		text = access_page(link.text,"text/html", werr = True)
 		cache.append([current_time,link.text])
+		links.append(link.text)
 		if text is not None:
 			with open(file_title(title.text,feed_title),"wb") as file:
 				file.write(text)
