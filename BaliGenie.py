@@ -4,11 +4,22 @@ import sys
 import os
 import time 
 from datetime import datetime
+import sys
 
-rss_path = "links.txt"
 rss_feeds = []
 
-res_folder = "res"
+assert len(sys.argv) <= 3, "Too many arguments"
+
+if len(sys.argv) == 1:
+	rss_path = "links.txt"
+else:
+	rss_path = sys.argv[1]
+
+if len(sys.argv) <= 2:
+	res_folder = "res"
+else:
+	res_folder = sys.argv[2]
+
 cache_path = res_folder + "/cache.txt"
 cache_expiry = 604800 # One week in seconds
 cache = []
@@ -76,11 +87,9 @@ def access_page (url,content_type_wanted,werr = False):
 	return raw_text
 
 def file_title (title, feed_title):
-	#if sys.platform.startswith("win32") or sys.platform.startswith("cygwin"):
+	# Characters not allowed in Windows filenames
 	replace = [	("/"," "), ("\\"," "), (">"," "), ('"',"'"), (":","- "),
 					("*"," "), ("|","- "), ("<"," "), ("?","") ]
-	#else:
-	#	replace = [ ("/","\\") ]
 		
 	for old,new in replace:
 		title = title.replace(old,new)
