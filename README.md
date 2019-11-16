@@ -1,4 +1,4 @@
-# BaliGenie
+# Prepmaster
 Crawls RSS feeds and stores webpages that are linked. Useful for the Extemporaneous Speaking Event of Speech and Debate
 
 ## Entering RSS sources
@@ -12,7 +12,7 @@ Huffington Post Politics	https://www.huffpost.com/section/politics/feed
 # Enter sources here
 ```
 - Lines beginning with "#" or empty lines are not interpreted
-- Each line should contain the title of the feed (which will be the name of the folder) and the link to the RSS feed
+- Each line should contain the title of the feed (which will be the name of the folder) and the link to the RSS feed, seperated by a tab
 - While the title is not neccessary, it is strongly recommended. You may enter just the link
 
 ## What it does
