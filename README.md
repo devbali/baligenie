@@ -22,3 +22,6 @@ Huffington Post Politics	https://www.huffpost.com/section/politics/feed
 - This file enters every link the program accessed, so if the same link is accessed multiple times it will not create duplicate files
 - Links in the cache expire every week, i.e. files may repeat if the RSS feed does not change its articles in a week (these should be updated daily or even more frequently)
 - To keep the article base updated you should run the script regularly, ideally automatically on a set frequency
+
+## Command Line usage
+- To use a custom path to the links file and the folder where articles are saved, run `python3 BaliGenie.py <links file path> <destination folder path>`
